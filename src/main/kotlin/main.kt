@@ -1,5 +1,5 @@
-import examples.PerlinEllipseWave
+import examples.DisplacedLines
 
 fun main(args: Array<String>) {
-    PerlinEllipseWave()
+    DisplacedLines()
 }
