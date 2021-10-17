@@ -1,5 +1,5 @@
-import examples.DisplacedLines
+import examples.ArcWaves
 
-fun main(args: Array<String>) {
-    DisplacedLines()
+fun main() {
+    ArcWaves()
 }
