@@ -1,5 +1,5 @@
-import examples.ArcWaves
+import examples.CircleArray
 
 fun main() {
-    ArcWaves()
+    CircleArray()
 }
