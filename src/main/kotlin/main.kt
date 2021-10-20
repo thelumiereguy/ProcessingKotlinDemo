@@ -1,5 +1,5 @@
-import examples.BezierCurves
+import art.MagnitudeBasedCircle
 
 fun main() {
-    BezierCurves()
+    MagnitudeBasedCircle()
 }
