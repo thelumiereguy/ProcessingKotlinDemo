@@ -1,5 +1,5 @@
-import examples.CircleArray
+import examples.BezierCurves
 
 fun main() {
-    CircleArray()
+    BezierCurves()
 }

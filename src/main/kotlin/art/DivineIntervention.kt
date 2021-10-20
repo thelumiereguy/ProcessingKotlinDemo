@@ -1,4 +1,4 @@
-package examples
+package art
 
 import processing.core.PApplet
 
