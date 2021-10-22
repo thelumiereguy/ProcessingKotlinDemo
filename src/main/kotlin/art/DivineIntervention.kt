@@ -5,7 +5,7 @@ import processing.core.PApplet
 class DivineIntervention : PApplet() {
 
     init {
-        setSize(800, 800)
+        setSize(1024, 1024)
         runSketch()
     }
 
@@ -29,12 +29,12 @@ class DivineIntervention : PApplet() {
         translate(width / 2f, height / 2f)
         scale(scale)
         stroke(0)
-        strokeWeight(2f)
+        strokeWeight(1.5f)
         (1..30).forEach { rings ->
-            rotation += 0.00005f
-            fill(23f, rings * 2.5F, 100f)
+            rotation += 0.000005f
+            fill(5f, rings * 2F, 90f)
             (1..rings).forEach {
-                val radius = 10f * rings
+                val radius = 8f * rings
                 val angle = radians(((360f / rings) * it)) + (rotation + (500 / rings) * scale)
                 val x = radius * cos(angle)
                 val y = radius * sin(angle)
@@ -44,6 +44,6 @@ class DivineIntervention : PApplet() {
 
         scale += 0.0005f
 
-//        saveFrame("/circleArray/#####.png")
+//        saveFrame("/${this.javaClass.name}/#####.png")
     }
 }

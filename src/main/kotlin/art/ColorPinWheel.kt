@@ -2,7 +2,7 @@ package art
 
 import processing.core.PApplet
 
-class MagnitudeBasedCircle : PApplet() {
+class ColorPinWheel : PApplet() {
 
     init {
         setSize(2048, 2048)
@@ -24,7 +24,7 @@ class MagnitudeBasedCircle : PApplet() {
         translate(halfWidth, halfHeight)
 
         repeat(100) { index ->
-            stroke(3.5f * index,50f,50f)
+            stroke(3.5f * index, 50f, 50f)
 
             val angle = radians((360f / 100) * index)
 

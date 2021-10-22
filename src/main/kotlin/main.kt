@@ -1,5 +1,5 @@
-import art.MagnitudeBasedCircle
+import art.FractalSpirograph
 
 fun main() {
-    MagnitudeBasedCircle()
+    FractalSpirograph()
 }
