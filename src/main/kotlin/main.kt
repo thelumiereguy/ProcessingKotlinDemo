@@ -1,5 +1,5 @@
-import art.phyllotaxis.Phyllotaxis
+import art.circle_pattern.CirclePattern
 
 fun main() {
-    Phyllotaxis()
+    CirclePattern()
 }
