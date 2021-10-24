@@ -18,33 +18,36 @@ class FractalSpirograph : PApplet() {
     private val list = mutableListOf<PVector>()
 
 
+    private val orbit by lazy { Orbit(0f, 0f, 150f) }
+
     override fun draw() {
         background(0)
         stroke(255f)
         noFill()
         strokeWeight(2f)
 
-        val radius = 200f
         val x = width / 2f
         val y = height / 2f
 
         translate(x, y)
 
-        circle(0f, 0f, radius * 2)
+        orbit.run {
+            update()
+            drawCircle(this@FractalSpirograph)
+            val newCoords = getCoords()
+            list.add(PVector(newCoords.first, newCoords.second))
+        }
 
-        val angle = radians(frameCount.toFloat())
+        beginShape()
+        list.forEachIndexed { index, pVector ->
+            stroke(max(index / 3, 150))
+            vertex(pVector.x, pVector.y)
+        }
+        endShape()
 
-        val newRadius = radius + (radius * 0.5f)
-
-        val newX = cos(angle) * newRadius
-        val newY = sin(angle) * newRadius
-
-        circle(newX, newY,  radius)
-
-//        Orbit((noise(frameCount * 0.001f)) * PI, 0f, 0f, radius, 0).run {
-//            circle(0f, 0f, radius)
-//        }
-
+        if (list.size > 700) {
+            list.removeFirstOrNull()
+        }
 
 //        noLoop()
     }
