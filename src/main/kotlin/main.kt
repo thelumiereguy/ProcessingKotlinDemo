@@ -1,5 +1,5 @@
-import art.fractal_spirograph.FractalSpirograph
+import art.phyllotaxis.Phyllotaxis
 
 fun main() {
-    FractalSpirograph()
+    Phyllotaxis()
 }
