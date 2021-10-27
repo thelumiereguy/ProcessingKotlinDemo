@@ -1,5 +1,5 @@
-import art.circle_pattern.CirclePattern
+import nature_of_code.vector_example.VectorExample
 
 fun main() {
-    CirclePattern()
+    VectorExample()
 }
