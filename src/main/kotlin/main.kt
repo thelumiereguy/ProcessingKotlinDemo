@@ -1,5 +1,5 @@
-import nature_of_code.vector_example.VectorExample
+import art.HexagonalMandela
 
 fun main() {
-    VectorExample()
+    HexagonalMandela()
 }
